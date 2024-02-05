@@ -12,7 +12,7 @@ body {
 
 .header {
   font-family: sans-serif;
-  color: black;
+  color: white;
   font-size: 30px;
   height: 50%;
   width: 200px;
@@ -23,11 +23,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.header:hover {
-  border: 3px solid rgb(255, 196, 0);
-  background-color: white;
   user-select: none;
 }
 
@@ -62,24 +57,82 @@ body {
 
 .one {
   /* perspective-origin: 150% -150%; */
-  transform: rotateY(-60deg);
+  /* transform: rotateY(-60deg); */
+  animation: one 4s ease 3s infinite;
+}
 
+@keyframes one {
+  0% {
+    transform: rotateY(0);
+  }
+
+  80% {
+    transform: rotateY(-180deg);
+  }
+
+  100% {
+    transform: rotateY(-180deg);
+  }
 }
 
 .two {
   top: 6.25rem;
-  transform: rotateY(-50deg);
+  /* transform: rotateY(-50deg); */
+  animation: two 4s ease 3.1s infinite;
+}
+
+@keyframes two {
+  0% {
+    transform: rotateY(0);
+  }
+
+  80% {
+    transform: rotateY(-180deg);
+  }
+
+  100% {
+    transform: rotateY(-180deg);
+  }
 }
 
 .three {
   top: 12.5rem;
-  transform: rotateY(-40deg);
+  /* transform: rotateY(-40deg); */
+  animation: three 4s ease 3.2s infinite;
+}
+
+@keyframes three {
+  0% {
+    transform: rotateY(0);
+  }
+
+  80% {
+    transform: rotateY(-180deg);
+  }
+
+  100% {
+    transform: rotateY(-180deg);
+  }
 }
 
 .four {
   top: 18.75rem;
-  transform: rotateY(-30deg);
+  /* transform: rotateY(-30deg); */
+  animation: four 4s ease 3.3s infinite;
+}
 
+@keyframes four {
+  0% {
+    transform: rotateY(0);
+  }
+
+  80% {
+    transform: rotateY(-180deg);
+  }
+
+  100% {
+    transform: rotateY(-180deg);
+  }
 }
 
 .front, .back, .top, .left, .right, .bottom {
@@ -94,7 +147,7 @@ body {
 }
 
 .back {
-  background-color: rgb(31, 31, 31);
+  background-color: rgb(77, 77, 77);
   transform: rotateY(180deg) translateZ(12.5rem);
 }
 
